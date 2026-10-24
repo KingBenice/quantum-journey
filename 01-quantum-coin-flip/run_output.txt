@@ -1,0 +1,13 @@
+     ┌───┐┌─┐
+  q: ┤ H ├┤M├
+     └───┘└╥┘
+c: 1/══════╩═
+           0 
+
+1000 quantum coin flips -> heads (0): 502, tails (1): 498
+Heads ratio: 0.502  (a fair coin should be close to 0.500)
+
+Random 8-bit number: 203  (bits: 11001011)
+Quantum dice roll: 4
+
+Saved: circuit.png and histogram.png in 01-quantum-coin-flip/

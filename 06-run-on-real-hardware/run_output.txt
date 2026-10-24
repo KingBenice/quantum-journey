@@ -1,0 +1,4 @@
+Running on: fake_manila
+Counts: {'00': 495, '01': 36, '10': 37, '11': 456}
+Qubits agreed in 92.9% of shots (a perfect, noise-free machine would give 100%; real chips have a little noise)
+Saved: fake_backend_histogram.png

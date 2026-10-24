@@ -1,23 +1,24 @@
 # quantum-journey
 
-**Nigerian CS grad learning quantum computing in public.**
+Hey, I'm Benjamin Akinade 👋🏾
 
-I'm Benjamin Akinade, a computer science graduate in Lagos. I'm learning quantum computing one small, working project at a time and sharing every step here and on X. Each project runs on a laptop with Python and Qiskit, and builds on the one before it.
+I do IT support, build websites with Framer, and design for brands here in Lagos. I studied computer science, and quantum physics has been my thing for years (along with astrophysics). So I finally decided to stop just reading about quantum computing and actually start building with it.
 
-## The projects
+This repo is me learning out loud. Small projects, one at a time, each one a bit harder than the last. I'm posting the journey on X too: [@Capt_KingBenice](https://x.com/Capt_KingBenice)
 
-| # | Project | Ideas it teaches |
-|---|---------|------------------|
-| 1 | [Quantum coin flip](01-quantum-coin-flip/) | superposition, measurement |
-| 2 | [Bell state (entanglement)](02-bell-state-entanglement/) | entanglement, CNOT |
-| 3 | [Quantum teleportation](03-quantum-teleportation/) | entanglement + classical bits, mid-circuit measurement |
-| 4 | [Bernstein-Vazirani](04-bernstein-vazirani/) | oracles, phase kickback, interference |
-| 5 | [Grover's search](05-grover-search/) | amplitude amplification |
-| bonus | [Run on real IBM hardware](06-run-on-real-hardware/) | noise, real QPUs, the free Open Plan |
+## What's in here so far
 
-Every folder has the script (commented line by line), a README with the physics in plain English, the images the code produced, a real run's output, and a "try this next" idea.
+1. **[Coin flip](01-quantum-coin-flip/)**: one qubit, 50/50 heads or tails. Where it all starts.
+2. **[Entanglement](02-bell-state-entanglement/)**: two qubits that always agree, no matter what.
+3. **[Teleportation](03-quantum-teleportation/)**: moving a qubit's state using entanglement plus two normal bits. (No, not Star Trek 😅)
+4. **[Bernstein-Vazirani](04-bernstein-vazirani/)**: finding a hidden number in one try instead of many.
+5. **[Grover's search](05-grover-search/)**: finding the right answer faster than checking one by one.
+6. **[Real IBM hardware](06-run-on-real-hardware/)** (bonus): running a circuit on an actual quantum computer, noise and all.
 
-## Quick start
+Each folder has the code, a short write-up in plain English, and the charts it produced.
+
+## Want to run it?
+
 ```
 python -m venv .venv
 .venv\Scripts\activate        (Mac/Linux: source .venv/bin/activate)
@@ -25,16 +26,23 @@ pip install -r requirements.txt
 cd 01-quantum-coin-flip
 python coin_flip.py
 ```
-New to Python on Windows? Start with [SETUP_GUIDE.md](SETUP_GUIDE.md).
 
-## Tested with
-Python 3.11, Qiskit 2.6.1, Qiskit Aer 0.18.0, qiskit-ibm-runtime 0.51.0, matplotlib 3.11 (October 2026). All five projects and the bonus `--fake` mode ran cleanly.
+On Windows and new to Python? [SETUP_GUIDE.md](SETUP_GUIDE.md) walks you through it.
 
-## Highlights
+Heads up: everything runs on a simulator on your laptop unless you're in folder 06.
+
+## A couple of results I like
+
+Entanglement: the qubits only ever land on 00 or 11, never mixed.
 
 ![Bell state](02-bell-state-entanglement/histogram.png)
 
+Grover: the right answer jumps out after just a couple of rounds.
+
 ![Grover rounds](05-grover-search/rounds.png)
 
-## What's next
-More algorithms (Deutsch-Jozsa, QFT, phase estimation), the same circuits on real hardware, and notes on what I get wrong along the way. Suggestions and corrections are welcome. Open an issue or reach me on X.
+## Next up
+
+Deutsch-Jozsa, the quantum Fourier transform, and more runs on real hardware. I'll also write down what I get wrong, because that's half of learning.
+
+If you spot a mistake or have a tip, open an issue or DM me on X. I'd genuinely appreciate it.

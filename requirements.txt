@@ -1,0 +1,5 @@
+qiskit>=2.0
+qiskit-aer
+qiskit-ibm-runtime>=0.50
+matplotlib
+pylatexenc

@@ -1,0 +1,13 @@
+     ┌───┐     ┌─┐   
+q_0: ┤ H ├──■──┤M├───
+     └───┘┌─┴─┐└╥┘┌─┐
+q_1: ─────┤ X ├─╫─┤M├
+          └───┘ ║ └╥┘
+c: 2/═══════════╩══╩═
+                0  1 
+
+Independent qubits: {'00': 277, '01': 238, '10': 263, '11': 246}
+Entangled (Bell) qubits: {'00': 533, '11': 491}
+Entangled qubits agreed in 1024/1024 shots (100.0%)
+
+Saved: circuit.png and histogram.png in 02-bell-state-entanglement/
